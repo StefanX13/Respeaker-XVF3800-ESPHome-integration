@@ -99,6 +99,7 @@ wifi:
   # Add power management and connection optimizations
   power_save_mode: none  # Disable power saving for better performance
   reboot_timeout: 10min  # Prevent unnecessary reboots
+  output_power: 8.5dB
   on_connect:
     - lambda: id(improv_ble_in_progress) = false;
     - script.execute: control_leds
